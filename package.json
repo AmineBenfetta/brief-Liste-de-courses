@@ -1,0 +1,11 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "scripts": {
+    "build:sass": "sass --no-source-map sass/main.scss css/styles.css",
+    "watch:sass": "sass --watch sass/main.scss css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.62.0"
+  }
+}
