@@ -1,38 +1,22 @@
-const input = document.getElementById('item-input');
-const addBtn = document.getElementById('add-btn');
-const itemList = document.getElementById('item-list');
+let add = document.getElementById("shop-btn");
+let input = document.getElementById("shopping");
+let list = document.getElementById("items-list");
 
-function addItem() {
-  const itemName = input.value.trim();
-
-  if (itemName === "") {
-    alert("Veuillez entrer un produit.");
-    return;
-  }
-
-  const li = document.createElement('li');
-  li.textContent = itemName;
-
-  const deleteBtn = document.createElement('button');
-  deleteBtn.textContent = 'Supprimer';
-  deleteBtn.classList.add('delete');
-
-  li.appendChild(deleteBtn);
-  itemList.appendChild(li);
-
-  input.value = '';
-  input.focus();
-}
-addBtn.addEventListener('click', addItem);
-
-input.addEventListener('keypress', function(event) {
-  if (event.key === 'Enter') {
-    addItem();
-  }
+function addItem () {  
+   if (input.value === "") {
+  return;
+   }
+  let newItem = document.createElement("li");
+  newItem.textContent = input.value;
+  let suppBtn = document.createElement("button");
+  suppBtn.textContent = "supprimer";
+  newItem.appendChild(suppBtn);
+  list.appendChild(newItem);
+  input.value = "";
+  suppBtn.addEventListener("click", () => {
+  newItem.remove();
 });
-
-itemList.addEventListener('click', function(event) {
-  if (event.target.classList.contains('delete')) {
-    event.target.parentElement.remove();
-  }
+}
+add.addEventListener("click", () => {
+addItem();
 });
