@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* Imports de fichiers vendors, ex: normalize.css */
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+body {
+  margin: 0;
+  padding: 40px 0;
+  background: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Patrick Hand", cursive;
+  color: #3e3e3e;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+#shopping-list {
+  position: relative;
+  width: 360px;
+  min-height: 520px;
+  padding: 100px 20px 20px;
+  background: url("./note-book.png") no-repeat center top;
+  background-size: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.input-group button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  font-size: 1rem;
+  background: #ffcc80;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.input-group button:hover {
+  background: #ffb74d;
+}
+
+#items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#items-list li {
+  position: relative;
+  margin-bottom: 6px;
+  padding: 6px 40px 6px 24px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+#items-list li::before {
+  content: "•";
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#items-list li button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  background: rgba(244, 67, 54, 0.6);
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#items-list li button:hover {
+  background: rgba(244, 67, 54, 0.8);
+}/*# sourceMappingURL=main.css.map */
