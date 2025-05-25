@@ -20,3 +20,45 @@ header h1 {
   margin: 0;
 }
 
+#shopping-list {
+  position: relative;
+  width: 360px;
+  min-height: 520px;
+  padding: 100px 20px 20px;
+  background: url('./note-book.png') no-repeat center top;
+  background-size: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.6);
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.input-group button {
+  padding: 6px 12px;
+  margin-left: 8px;
+  font-size: 1rem;
+  background: #ffcc80;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background 0.3s;
+}
+
+.input-group button:hover {
+  background: #ffb74d;
+}
+
+
