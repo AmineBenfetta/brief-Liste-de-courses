@@ -61,4 +61,42 @@ header h1 {
   background: #ffb74d;
 }
 
+#items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+#items-list li {
+  position: relative;
+  margin-bottom: 6px;
+  padding: 6px 40px 6px 24px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+
+#items-list li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#items-list li button {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  background: rgba(244, 67, 54, 0.6);
+  color: #fff;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#items-list li button:hover {
+  background: rgba(244, 67, 54, 0.8);
+}
