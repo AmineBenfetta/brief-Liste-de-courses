@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><!-- Titre de la page --></title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>liste de courses.</title>
+  <link rel="stylesheet" href="/sass/main.css">
 </head>
 <body>
-  <!-- Contenu principal -->
-  <script src="js/script.js" defer></script>
+  <header>
+    <h1>Liste de courses</h1>
+  </header>
+  <section id="shopping-list">
+  <div class="input-group">
+    <input type="text" id="shopping" placeholder="Veuillez ajoutez des articles">
+    <button id="shop-btn">Ajouter</button>
+  </div>
+    <ul id="items-list"></ul>
+  </section>
+  <script src="/js/script.js"></script>
 </body>
 </html>
